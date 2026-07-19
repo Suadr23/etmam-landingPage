@@ -1,0 +1,40 @@
+/* Header mobile overflow fix (applies only to the new header classes) */
+
+.bb-header-desktop {
+  display: flex;
+}
+
+.bb-header-mobile-btn {
+  display: none;
+}
+
+.bb-header-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bb-header-desktop {
+    display: none !important;
+  }
+
+  .bb-header-mobile-btn {
+    display: inline-flex !important;
+  }
+
+  .bb-header-mobile-menu {
+    display: block !important;
+  }
+
+  /* Prevent any horizontal overflow */
+  header,
+  header * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Make sure logo row wraps nicely */
+  header {
+    overflow-x: hidden;
+  }
+}
+
