@@ -7,3 +7,64 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ── Sunburst / Light Rays Background ── */
+.sunburst-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.08;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(138, 115, 85, 0.12) 10deg,
+    transparent 20deg,
+    rgba(10, 25, 47, 0.08) 30deg,
+    transparent 40deg,
+    rgba(138, 115, 85, 0.10) 50deg,
+    transparent 60deg,
+    rgba(10, 25, 47, 0.06) 70deg,
+    transparent 80deg,
+    rgba(138, 115, 85, 0.10) 90deg,
+    transparent 100deg,
+    rgba(10, 25, 47, 0.07) 110deg,
+    transparent 120deg,
+    rgba(138, 115, 85, 0.08) 130deg,
+    transparent 140deg,
+    rgba(10, 25, 47, 0.06) 150deg,
+    transparent 160deg,
+    rgba(138, 115, 85, 0.10) 170deg,
+    transparent 180deg,
+    rgba(10, 25, 47, 0.08) 190deg,
+    transparent 200deg,
+    rgba(138, 115, 85, 0.09) 210deg,
+    transparent 220deg,
+    rgba(10, 25, 47, 0.05) 230deg,
+    transparent 240deg,
+    rgba(138, 115, 85, 0.12) 250deg,
+    transparent 260deg,
+    rgba(10, 25, 47, 0.07) 270deg,
+    transparent 280deg,
+    rgba(138, 115, 85, 0.09) 290deg,
+    transparent 300deg,
+    rgba(10, 25, 47, 0.06) 310deg,
+    transparent 320deg,
+    rgba(138, 115, 85, 0.08) 330deg,
+    transparent 340deg,
+    rgba(10, 25, 47, 0.08) 350deg,
+    transparent 360deg
+  );
+  background-size: 100% 100%;
+  animation: sunburst-rotate 75s linear infinite;
+}
+
+@keyframes sunburst-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

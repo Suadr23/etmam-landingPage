@@ -137,6 +137,8 @@ export default function Home() {
 
   return (
     <main style={{ fontFamily: 'Arial, sans-serif', backgroundColor: '#f8fafc', margin: 0, padding: 0, position: 'relative' }}>
+      {/* Ambient sunburst / light rays background */}
+      <div className="sunburst-bg" />
 
       <style>{`
         .card-3d {
@@ -177,7 +179,7 @@ export default function Home() {
             <div style={{ display: 'flex', gap: '25px', fontWeight: '500', flexWrap: 'wrap' }} className="header-nav">
               <a href="#" onClick={(e) => { e.preventDefault(); setCurrentScreen('home'); }} style={{ color: 'white', textDecoration: 'none', borderBottom: '2px solid white', paddingBottom: '4px' }}>{t.navHome}</a>
               <a href="/Services" style={{ color: '#cbd5e1', textDecoration: 'none' }}>{t.navServices}</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); setCurrentScreen('projects'); }} style={{ color: '#cbd5e1', textDecoration: 'none' }}>{t.navProjects}</a>
+              <a href="/projects" style={{ color: '#cbd5e1', textDecoration: 'none' }}>{t.navProjects}</a>
               <a href="#about-section" onClick={(e) => { e.preventDefault(); document.getElementById('about-section')?.scrollIntoView({ behavior: 'smooth' }); }} style={{ color: '#cbd5e1', textDecoration: 'none' }}>{t.navAbout}</a>
             </div>
 
@@ -431,7 +433,7 @@ export default function Home() {
         <div dir={t.dir} style={{ minHeight: '100vh', backgroundColor: '#f8fafc', color: '#1e293b', padding: '40px 6% 80px 6%', boxSizing: 'border-box' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: '1200px', margin: '0 auto 60px auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="ETMAM Logo" style={{ height: '65px', width: 'auto', objectFit: 'contain' }} />
+              <img src="/logo.png" alt="ETMAM Logo" style={{ height: '120px', width: 'auto', objectFit: 'contain' }} />
             </div>
             <div style={{ display: 'flex', gap: '25px', fontWeight: '500' }}>
               <a href="#" onClick={(e) => { e.preventDefault(); setCurrentScreen('home'); }} style={{ color: '#475569', textDecoration: 'none' }}>{t.navHome}</a>
@@ -458,7 +460,7 @@ export default function Home() {
       <footer dir={t.dir} style={{ backgroundColor: '#071120', borderTop: '1px solid rgba(255, 255, 255, 0.05)', padding: '40px 6% 30px 6%', color: 'white' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', gap: '40px' }}>
           <div style={{ display: 'flex', flexDirection: 'column', textAlign: t.dir === 'rtl' ? 'right' : 'left', gap: '8px' }}>
-            <img src="/logo.png" alt="ETMAM Logo" style={{ height: '65px', width: 'auto', objectFit: 'contain', alignSelf: t.dir === 'rtl' ? 'flex-end' : 'flex-start' }} />
+            <img src="/logo.png" alt="ETMAM Logo" style={{ height: '120px', width: 'auto', objectFit: 'contain', alignSelf: t.dir === 'rtl' ? 'flex-end' : 'flex-start' }} />
             <span style={{ fontSize: '11px', color: '#8A7355', textTransform: 'uppercase', fontWeight: 'bold', marginTop: '4px' }}>Engineering Services</span>
           </div>
 
@@ -467,7 +469,7 @@ export default function Home() {
               <span style={{ fontSize: '14px', fontWeight: 'bold', color: '#ffffff', marginBottom: '5px' }}>Sitemap</span>
               <a href="#" onClick={(e) => { e.preventDefault(); setCurrentScreen('home'); }} style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '13px' }}>{t.navHome}</a>
               <a href="#" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '13px' }}>{t.navServices}</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); setCurrentScreen('projects'); }} style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '13px' }}>{t.navProjects}</a>
+              <a href="/projects" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '13px' }}>{t.navProjects}</a>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', textAlign: t.dir === 'rtl' ? 'right' : 'left' }}>
               <span style={{ fontSize: '14px', fontWeight: 'bold', color: '#ffffff', marginBottom: '5px' }}>{t.navContact}</span>

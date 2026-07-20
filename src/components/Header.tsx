@@ -84,7 +84,7 @@ export default function Header() {
           <img
             src="/logo.png"
             alt="ETMAM Logo"
-            style={{ height: '65px', width: 'auto', objectFit: 'contain' }}
+            style={{ height: '120px', width: 'auto', objectFit: 'contain' }}
           />
         </div>
 
