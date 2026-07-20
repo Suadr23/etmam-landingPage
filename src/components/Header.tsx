@@ -36,7 +36,7 @@ export default function Header() {
       navHome: 'Home',
       navServices: 'Services',
       navProjects: 'Projects',
-      navAbout: 'About',
+      navAbout: 'About Us',
       navContact: 'Contact',
       toggleLang: 'العربية',
     };

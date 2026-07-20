@@ -31,7 +31,7 @@ export default function Home() {
       navHome: 'Home',
       navServices: 'Services',
       navProjects: 'Projects',
-      navAbout: 'About',
+      navAbout: 'About Us',
       navContact: 'Contact',
       heroTitle: 'Advancing Innovative Engineering & Project Management',
       heroSub: 'Building the future with expertise and excellence.',
@@ -56,7 +56,7 @@ export default function Home() {
       exp3Desc: 'Eco-friendly and smart building engineering methodologies for long-term sustainability.',
       exp4Title: 'ETMAM - Renewable Solutions',
       exp4Desc: 'Integrating clean energy systems and future-proof sustainable engineering infrastructure.',
-      expBtn: 'Reach Us',
+     
 
       brandDeclaration: 'Corporate Pillars',
       visionTitle: 'Our Vision',
@@ -150,12 +150,10 @@ export default function Home() {
           transform: translateY(-10px) rotateX(4deg) rotateY(2deg);
           box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
         }
-          
       `}</style>
-      
 
       {currentScreen === 'home' ? (
-     
+        <>
           <div
             dir={t.dir}
             style={{
@@ -174,7 +172,7 @@ export default function Home() {
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <img src="/logo.png" alt="ETMAM Logo" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
+                <img src="/logo.png" alt="ETMAM Logo" style={{ height: '120px', width: 'auto', objectFit: 'contain' }} />
               </div>
             <div style={{ display: 'flex', gap: '25px', fontWeight: '500', flexWrap: 'wrap' }} className="header-nav">
               <a href="#" onClick={(e) => { e.preventDefault(); setCurrentScreen('home'); }} style={{ color: 'white', textDecoration: 'none', borderBottom: '2px solid white', paddingBottom: '4px' }}>{t.navHome}</a>
@@ -182,7 +180,6 @@ export default function Home() {
               <a href="#" onClick={(e) => { e.preventDefault(); setCurrentScreen('projects'); }} style={{ color: '#cbd5e1', textDecoration: 'none' }}>{t.navProjects}</a>
               <a href="#about-section" onClick={(e) => { e.preventDefault(); document.getElementById('about-section')?.scrollIntoView({ behavior: 'smooth' }); }} style={{ color: '#cbd5e1', textDecoration: 'none' }}>{t.navAbout}</a>
             </div>
-            
 
 <style>{`
               @media (max-width: 768px) {
@@ -273,53 +270,40 @@ export default function Home() {
                   <button style={{ backgroundColor: 'white', color: '#0A192F', border: 'none', padding: '10px 20px', borderRadius: '4px', fontSize: '13px', fontWeight: 'bold', cursor: 'pointer', marginTop: 'auto' }}>{t.cardBtn}</button>
                 </div>
               </div>
- <div style={{ flex: '1 1 33%', backgroundColor: '#0A192F', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column' }}>
-
+              <div style={{ flex: '1 1 33%', backgroundColor: '#0A192F', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column' }}>
+<div style={{ flex: '1 1 33%', backgroundColor: '#0A192F', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column' }}>
   <div style={{ width: '100%', height: '180px' }}>
-    <img
-      src="/2.jpeg"
-      alt="Commercial"
-      style={{ width: '100%', height: '180px', objectFit: 'cover' }}
+    <img 
+      src="/2.jpeg" 
+      alt="Commercial" 
+      style={{ width: '100%', height: '180px', objectFit: 'cover' }} 
     />
   </div>
-
-  <div style={{ padding: '25px', display: 'flex', flexDirection: 'column', gap: '15px', textAlign: t.dir === 'rtl' ? 'right' : 'left', alignItems: t.dir === 'rtl' ? 'flex-end' : 'flex-start', flexGrow: 1 }}>
-    <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', flexDirection: t.dir === 'rtl' ? 'row-reverse' : 'row' }}>
-      <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', margin: 0 }}>
-        {t.card2Title}
-      </h3>
-      <span></span>
-    </div>
-
-    <span style={{ color: '#94a3b8', fontSize: '14px' }}>ETMAM</span>
-
-    <button style={{ backgroundColor: 'white', color: '#0A192F', border: 'none', padding: '10px 20px', borderRadius: '4px', fontSize: '13px', fontWeight: 'bold', cursor: 'pointer', marginTop: 'auto' }}>
-      {t.cardBtn}
-    </button>
-  </div>
-
-</div>
-
-              <div style={{ flex: '1 1 33%', backgroundColor: '#0A192F', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column' }}>
-                <div style={{ width: '100%', height: '180px' }}>
-                  <img 
-                    src="/3.jpeg" 
-                    alt="Urban" 
-                    style={{ width: '100%', height: '180px', objectFit: 'cover' }} 
-                  />
-                </div>
-                <div style={{ padding: '25px', display: 'flex', flexDirection: 'column', gap: '15px', textAlign: t.dir === 'rtl' ? 'right' : 'left', alignItems: t.dir === 'rtl' ? 'flex-end' : 'flex-start', flexGrow: 1 }}>
-                  <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', flexDirection: t.dir === 'rtl' ? 'row-reverse' : 'row' }}>
-                    <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', margin: 0 }}>{t.card3Title}</h3>
-                    <span></span>
-                  </div>
+  {/* ... */}
+</div>                <div style={{ padding: '25px', display: 'flex', flexDirection: 'column', gap: '15px', textAlign: t.dir === 'rtl' ? 'right' : 'left', alignItems: t.dir === 'rtl' ? 'flex-end' : 'flex-start', flexGrow: 1 }}>
+                  <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', flexDirection: t.dir === 'rtl' ? 'row-reverse' : 'row' }}><h3 style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', margin: 0 }}>{t.card2Title}</h3><span></span></div>
                   <span style={{ color: '#94a3b8', fontSize: '14px' }}>ETMAM</span>
                   <button style={{ backgroundColor: 'white', color: '#0A192F', border: 'none', padding: '10px 20px', borderRadius: '4px', fontSize: '13px', fontWeight: 'bold', cursor: 'pointer', marginTop: 'auto' }}>{t.cardBtn}</button>
                 </div>
               </div>
-             
-           
-          
+              <div style={{ flex: '1 1 33%', backgroundColor: '#0A192F', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column' }}>
+<div style={{ flex: '1 1 33%', backgroundColor: '#0A192F', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 15px 35px rgba(0,0,0,0.3)', display: 'flex', flexDirection: 'column' }}>
+  <div style={{ width: '100%', height: '180px' }}>
+    <img 
+      src="/3.jpeg" 
+      alt="Urban" 
+      style={{ width: '100%', height: '180px', objectFit: 'cover' }} 
+    />
+  </div>
+  {/* ... */}
+</div>                <div style={{ padding: '25px', display: 'flex', flexDirection: 'column', gap: '15px', textAlign: t.dir === 'rtl' ? 'right' : 'left', alignItems: t.dir === 'rtl' ? 'flex-end' : 'flex-start', flexGrow: 1 }}>
+                  <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', flexDirection: t.dir === 'rtl' ? 'row-reverse' : 'row' }}><h3 style={{ fontSize: '20px', fontWeight: 'bold', color: 'white', margin: 0 }}>{t.card3Title}</h3><span></span></div>
+                  <span style={{ color: '#94a3b8', fontSize: '14px' }}>ETMAM</span>
+                  <button style={{ backgroundColor: 'white', color: '#0A192F', border: 'none', padding: '10px 20px', borderRadius: '4px', fontSize: '13px', fontWeight: 'bold', cursor: 'pointer', marginTop: 'auto' }}>{t.cardBtn}</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <section id="about-section" dir={t.dir} style={{ padding: '160px 6% 60px 6%', maxWidth: '1200px', margin: '0 auto', boxSizing: 'border-box' }}>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '50px', alignItems: 'center' }}>
@@ -401,14 +385,13 @@ export default function Home() {
             </div>
 
             <div style={{ textAlign: t.dir === 'rtl' ? 'right' : 'left' }}>
-                <button onClick={() => setShowContactModal(true)} style={{ backgroundColor: '#2563eb', color: 'white', border: 'none', padding: '12px 28px', borderRadius: '6px', fontSize: '14px', fontWeight: 'bold', cursor: 'pointer', boxShadow: '0 4px 12px rgba(37,99,235,0.15)' }}>
-                	{t.expBtn}
-                </button>
-
+                
                 {/* Contact anchor (for dropdown navigation only) */}
                 <div id="contact-section" style={{ height: 0, width: 0 }} />
             </div>
           </section>
+
+
 
           <section dir={t.dir} style={{ padding: '80px 6%', backgroundColor: '#0A192F', color: 'white', textAlign: 'center' }}>
 
@@ -439,20 +422,12 @@ export default function Home() {
                     <h3 style={{ fontSize: '22px', color: '#8A7355', fontWeight: 'bold', margin: 0 }}>{t.missionTitle}</h3>
                   </div>
                   <p style={{ fontSize: '15px', color: '#cbd5e1', lineHeight: '1.7', margin: 0 }}>{t.missionDesc}</p>
-                  
-    
                 </div>
               </div>
             </div>
           </section>
-
-        </div>
-      : null (
-      );
-          <>
-
-       
-   
+        </>
+      ) : (
         <div dir={t.dir} style={{ minHeight: '100vh', backgroundColor: '#f8fafc', color: '#1e293b', padding: '40px 6% 80px 6%', boxSizing: 'border-box' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: '1200px', margin: '0 auto 60px auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -478,7 +453,7 @@ export default function Home() {
             <PortfolioSection />
           </div>
         </div>
-     
+      )}
 
       <footer dir={t.dir} style={{ backgroundColor: '#071120', borderTop: '1px solid rgba(255, 255, 255, 0.05)', padding: '40px 6% 30px 6%', color: 'white' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', gap: '40px' }}>
@@ -506,8 +481,6 @@ export default function Home() {
           {t.footerRights}
         </div>
       </footer>
-       
     </main>
-    </>
- );
- 
+  );
+}

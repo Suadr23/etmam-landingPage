@@ -22,7 +22,7 @@ const content = {
     navHome: 'Home',
     navServices: 'Services',
     navProjects: 'Projects',
-    navAbout: 'About',
+    navAbout: 'About Us',
     navContact: 'Contact',
     backHome: 'Back to Home',
     pill: 'Corporate Services',
@@ -85,7 +85,7 @@ export default function ServicesPage() {
            <div style={{ padding: '30px 6% 0 6%' }}>
              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 1200, margin: '0 auto 30px auto' }}> 
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                 <img src="/logo.png" alt="ETMAM Logo" style={{ height: '65px', width: 'auto', objectFit: 'contain' }} /> 
+                 <img src="/logo.png" alt="ETMAM Logo" style={{ height: '100px', width: 'auto', objectFit: 'contain' }} /> 
                  </div>
                   <div style={{ display: 'flex', gap: 25, fontWeight: 500 }}> 
                     <a href="/" style={{ color: '#475569', textDecoration: 'none' }}>{t.navHome}
