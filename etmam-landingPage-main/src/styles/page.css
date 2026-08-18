@@ -1,0 +1,580 @@
+/* =========================================================
+   ETMAM FOOTER
+   LIGHT LUXURY DESIGN
+   ========================================================= */
+
+.bb-footer {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  padding: 25px 30px 18px;
+
+  background:
+    radial-gradient(
+      circle at 50% 5%,
+      rgba(105, 155, 195, 0.18) 0%,
+      rgba(105, 155, 195, 0.06) 28%,
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #f7fbff 0%,
+      #eef6fc 100%
+    );
+
+  color: #123b70;
+  text-align: center;
+
+  border-top: 1px solid rgba(20, 60, 105, 0.08);
+
+  box-shadow:
+    0 -8px 30px rgba(15, 53, 90, 0.07);
+}
+
+
+/* =========================================================
+   LOGO SECTION
+   ========================================================= */
+
+.bb-footer-logo-section {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.bb-footer-logo {
+  display: block;
+
+  width: auto;
+  height: 175px;
+  max-width: 250px;
+
+  object-fit: contain;
+
+  /* Original dark-blue ETMAM logo */
+  filter: none !important;
+
+  opacity: 1;
+  margin: 0;
+}
+
+
+/* =========================================================
+   GOLD LINE UNDER LOGO
+   ========================================================= */
+
+.bb-footer-logo-line {
+  width: 370px;
+  max-width: 75%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.bb-footer-logo-line span:first-child,
+.bb-footer-logo-line span:last-child {
+  flex: 1;
+
+  height: 1px;
+
+  background: #d6aa4f;
+}
+
+.bb-footer-diamond {
+  color: #d6aa4f;
+
+  font-size: 12px;
+  line-height: 1;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.bb-footer-nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 35px;
+}
+
+.bb-footer-nav-link {
+  color: #123b70;
+
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  white-space: nowrap;
+
+  padding: 0 38px;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.bb-footer-nav-link:hover {
+  color: #c79b3d;
+
+  transform: translateY(-2px);
+}
+
+.bb-footer-nav-line {
+  display: block;
+
+  width: 1px;
+  height: 38px;
+
+  background: #d6aa4f;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SOCIAL SECTION
+   ========================================================= */
+
+.bb-footer-social {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin-bottom: 12px;
+}
+
+.bb-footer-social-item {
+  min-width: 180px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-decoration: none;
+
+  color: #123b70;
+}
+
+.bb-footer-social-item + .bb-footer-social-item {
+  border-left: 1px solid #d6aa4f;
+}
+
+
+/* =========================================================
+   SOCIAL CIRCLES
+   ========================================================= */
+
+.bb-footer-social-circle {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #a9bfd5;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  color: #123b70;
+
+  font-size: 19px;
+
+  margin-bottom: 6px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.bb-footer-social-item:hover .bb-footer-social-circle {
+  transform: translateY(-3px);
+
+  background: #ffffff;
+
+  border-color: #123b70;
+
+  color: #123b70;
+}
+
+.bb-footer-social-label {
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #123b70;
+}
+
+
+/* =========================================================
+   BOTTOM GOLD DECORATION
+   ========================================================= */
+
+.bb-footer-bottom-decoration {
+  width: min(880px, 85%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 0 auto 12px;
+}
+
+.bb-footer-bottom-decoration span:first-child,
+.bb-footer-bottom-decoration span:last-child {
+  flex: 1;
+
+  height: 1px;
+
+  background: #d6aa4f;
+}
+
+.bb-footer-bottom-diamond {
+  color: #d6aa4f;
+
+  font-size: 10px;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+.bb-footer-bottom {
+  width: 100%;
+
+  color: #234d7d;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .bb-footer {
+    padding: 35px 25px 25px;
+  }
+
+  .bb-footer-logo {
+    height: 90px;
+  }
+
+  .bb-footer-logo-section {
+    margin-bottom: 30px;
+  }
+
+  .bb-footer-nav {
+    margin-bottom: 35px;
+  }
+
+  .bb-footer-nav-link {
+    font-size: 17px;
+    padding: 0 20px;
+  }
+
+  .bb-footer-nav-line {
+    height: 28px;
+  }
+
+  .bb-footer-social {
+    margin-bottom: 30px;
+  }
+
+  .bb-footer-social-item {
+    min-width: 150px;
+  }
+
+  .bb-footer-social-circle {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+  }
+
+  .bb-footer-social-label {
+    font-size: 14px;
+  }
+
+  .bb-footer-bottom {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .bb-footer {
+    padding: 30px 16px 20px;
+
+    border-radius: 40px 40px 0 0;
+  }
+
+
+  /* Logo */
+
+  .bb-footer-logo-section {
+    margin-bottom: 25px;
+  }
+
+  .bb-footer-logo {
+    height: 90px;
+    max-width: 160px;
+  }
+
+  .bb-footer-logo-line {
+    width: 210px;
+    max-width: 80%;
+    margin-top: 8px;
+  }
+
+
+  /* Navigation */
+
+  .bb-footer-nav {
+    margin-bottom: 30px;
+    row-gap: 11px;
+  }
+
+  .bb-footer-nav-link {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  .bb-footer-nav-line {
+    height: 20px;
+  }
+
+
+  /* Social */
+
+  .bb-footer-social {
+    margin-bottom: 28px;
+    width: 100%;
+  }
+
+  .bb-footer-social-item {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .bb-footer-social-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .bb-footer-social-label {
+    font-size: 11px;
+  }
+
+  .bb-footer-social-item + .bb-footer-social-item {
+    border-left: 1px solid #d6aa4f;
+  }
+
+
+  /* Bottom */
+
+  .bb-footer-bottom-decoration {
+    width: 90%;
+    margin-bottom: 14px;
+  }
+
+  .bb-footer-bottom {
+    font-size: 8px;
+    padding: 0 5px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .bb-footer {
+    padding: 27px 10px 17px;
+  }
+
+  .bb-footer-logo {
+    height: 82px;
+    max-width: 145px;
+  }
+
+  .bb-footer-logo-section {
+    margin-bottom: 23px;
+  }
+
+  .bb-footer-logo-line {
+    width: 180px;
+    gap: 7px;
+  }
+
+  .bb-footer-diamond {
+    font-size: 8px;
+  }
+
+  .bb-footer-nav {
+    margin-bottom: 27px;
+    row-gap: 9px;
+  }
+
+  .bb-footer-nav-link {
+    font-size: 10px;
+    padding: 0 6px;
+  }
+
+  .bb-footer-nav-line {
+    height: 17px;
+  }
+
+  .bb-footer-social {
+    margin-bottom: 25px;
+  }
+
+  .bb-footer-social-circle {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  .bb-footer-social-label {
+    font-size: 9px;
+  }
+
+  .bb-footer-bottom-decoration {
+    width: 92%;
+    gap: 7px;
+    margin-bottom: 11px;
+  }
+
+  .bb-footer-bottom {
+    font-size: 7px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .bb-footer {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .bb-footer-logo {
+    height: 75px;
+  }
+
+  .bb-footer-logo-line {
+    width: 160px;
+  }
+
+  .bb-footer-nav-link {
+    font-size: 9px;
+    padding: 0 4px;
+  }
+
+  .bb-footer-nav-line {
+    height: 15px;
+  }
+
+  .bb-footer-social-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .bb-footer-social-label {
+    font-size: 8px;
+  }
+
+  .bb-footer-bottom {
+    font-size: 6px;
+  }
+}
+
+  @media (max-width: 767px) {
+
+    /* Hero text */
+    .hero-section .hero-title {
+      font-size: 28px !important;
+      line-height: 1.3 !important;
+      max-width: 330px !important;
+      margin: 0 !important;
+    }
+
+    .hero-section .hero-sub {
+      font-size: 17px !important;
+      line-height: 1.5 !important;
+      max-width: 300px !important;
+      margin-top: 12px !important;
+    }
+
+    /* نفس بداية الشعار */
+    .hero-section > div:not(.hero-cards-row) {
+      width: 100% !important;
+      max-width: none !important;
+      padding-left: 6% !important;
+      padding-right: 6% !important;
+      box-sizing: border-box !important;
+
+      margin-top: 105px !important;
+      transform: translateX(-5px) !important;
+
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+  }
+
